@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages {
+            stage('file creation') {
+            steps {
+                sh """
+                if [ -d "/test" ]
+                then
+                  echo "directory Exit"
+                else
+                  mkdir /test
+                fi
+                touch /opt/testfile.txt
+                cp -Rp /opt/testfile.txt /test
+                """
+            }
+        }
+    }
+}
