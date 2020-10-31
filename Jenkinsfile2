@@ -6,7 +6,7 @@ pipeline {
                 sh """
                 if [ -d "/test" ]
                 then
-                  echo "directory Exit"
+                  echo "directory Exist"
                 else
                   mkdir /test
                 fi
