@@ -10,10 +10,10 @@ pipeline {
                 then
                   echo "directory Exist"
                 else
-                  mkdir /test
+                  sudo mkdir /test
                 fi
-                touch /opt/testfile.txt
-                cp -Rp /opt/testfile.txt /test
+                sudo touch /opt/testfile.txt
+                sudo cp -Rp /opt/testfile.txt /test
                 """
             }
         }
