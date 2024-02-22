@@ -8,13 +8,13 @@ pipeline {
                     """
             }
         }
-		    stage('make directory') {
-			    steps {
-			        sh """
-				    touch /opt/testfile2.txt
-				    """
-        }
-    }
+	  stage('make directory') {
+	    steps {
+	      sh """
+		touch /opt/testfile2.txt
+		"""
+            }
+         }
 		    stage('hello directory') {
 			    steps {
 			        sh """
